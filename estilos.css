@@ -1,0 +1,57 @@
+/* CSS DOCUMENT */
+@charset "UTF-8";
+
+@font-face {
+    font-family: "Bon Foyage";
+    src: url(fonts/Bon\ Foyage\ DEMO.otf);
+    font-style: normal;
+}
+
+.manrope-<uniquifier> {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+
+body {
+    font-family: "Manrope", sans-serif;
+    text-align: center;
+    text-decoration-line: none;
+}
+
+nav {
+    padding: 0px 12px;
+    background-color: whitesmoke;
+    font-size: 20px;
+    color: black;
+    height: 100px;
+    font-family: "Manrope";
+}
+
+nav img {
+    width: 20px;
+}
+
+.perfil {
+    background-color: #C6ADDB;
+}
+
+.perfil h1 {
+    font-weight: lighter;
+    font-size: 100px;
+}
+
+.perfil img {
+    align-content: last baseline;
+}
+
+.experiencia{
+    background-color: rgb(229, 229, 229);
+    text-align: left;
+}
+
+.experiencia h3{
+    font-size: 50px;
+}
