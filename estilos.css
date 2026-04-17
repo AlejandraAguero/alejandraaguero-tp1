@@ -1,57 +1,197 @@
 /* CSS DOCUMENT */
 @charset "UTF-8";
 
-@font-face {
-    font-family: "Bon Foyage";
-    src: url(fonts/Bon\ Foyage\ DEMO.otf);
-    font-style: normal;
-}
-
-.manrope-<uniquifier> {
-    font-family: "Manrope", sans-serif;
+.darker-grotesque {
+    font-family: "Darker Grotesque", sans-serif;
     font-optical-sizing: auto;
     font-weight: <weight>;
     font-style: normal;
 }
 
+.asta-sans {
+    font-family: "Asta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #3A3A3A
+}
 
 body {
-    font-family: "Manrope", sans-serif;
-    text-align: center;
-    text-decoration-line: none;
+    font-family: "Asta Sans", sans-serif;
+    font-weight: 400;
+    text-align: left;
+    background-color: rgb(245, 245, 245);
+    color: #3A3A3A;
+}
+
+header {
+    font-family: "Darker Grotesque", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    background-color: #E9E9E9;
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+    padding: 30px;
 }
 
 nav {
-    padding: 0px 12px;
-    background-color: whitesmoke;
-    font-size: 20px;
-    color: black;
-    height: 100px;
-    font-family: "Manrope";
+    padding: 30px;
+    font-size: 2.5rem;
+    text-align: right;
+    text-decoration: none;
+    color: #3A3A3A;
+    width: 100vh;
+    display: flex;
+    justify-content: space-evenly;
 }
 
-nav img {
-    width: 20px;
+#hero {
+    font-size: 1.2rem;
+    height: 90vh;
+    background-image: url(img/textura_fondo.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    align-content: center;
 }
 
-.perfil {
+#hero h1 {
+    margin-top: 30px;
+    width: 900px;
+    font-family: "Darker Grotesque", sans-serif;
+    font-weight: 500;
+    font-size: 11rem;
+    line-height: 9rem;
+}
+
+#hero h2 {
+    padding: 10px;
+    margin-top: 50px;
+    text-align: center;
+    width: 35%;
+    font-family: "Asta Sans", sans-serif;
+    font-weight: 400;
+    color: white;
     background-color: #C6ADDB;
 }
 
-.perfil h1 {
-    font-weight: lighter;
-    font-size: 100px;
+#hero p {
+    font-size: 1.5rem;
+    max-width: 600px;
+    margin-top: 4%;
+    text-wrap-style: balance;
 }
 
-.perfil img {
-    align-content: last baseline;
+#hero img {
+    width: 400px;
+    height: 600px;
+    border-radius: 200px;
 }
 
-.experiencia{
-    background-color: rgb(229, 229, 229);
-    text-align: left;
+.article {
+    background-color: rgb(255, 255, 255);
 }
 
-.experiencia h3{
+#experiencia div {
+    background-color: #C6ADDB;
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 50px;
+}
+
+#experiencia h1 {
+    font-family: "Darker Grotesque", sans-serif;
+    font-weight: 500;
     font-size: 50px;
+    padding: 20px;
+    color: whitesmoke;
+}
+
+#experiencia li img {
+    padding-left: 0px;
+    width: 150px;
+    height: 150px;
+}
+
+#experiencia ul {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#experiencia li {
+    padding-top: 40px;
+    width: 20%;
+}
+
+.formacion div {
+    background-color: #767676;
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 50px;
+}
+
+.formacion h1 {
+    font-family: "Darker Grotesque", sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    padding: 20px;
+    color: whitesmoke;
+}
+
+.formacion li img {
+    padding-left: 0px;
+    width: 150px;
+    height: 150px;
+}
+
+.formacion ul {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer {
+    background-color: #E9E9E9;
+    text-align: center;
+    padding: 40px;
+    font-size: 1rem;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+footer img {
+    width: 20px;
+    height: 20px;
 }

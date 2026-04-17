@@ -3,75 +3,105 @@
 
 <head>
     <meta charset="utf-8" />
-    <title> Mi CV</title>
-    <link href="estilos.css" rel="stylesheet" type="text/css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <title>CV Aguero Alejandra</title>
+    <link rel="stylesheet" href="estilos.css" type="text/css">
+    <link rel="icon" type="image/x-icon" href="img/logo_estrella.ico">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Asta+Sans:wght@300..800&family=Darker+Grotesque:wght@300..900&display=swap');
+    </style>
 </head>
 
 <body>
+
     <header>
+        <img src="img/logo_estrella.ico" alt="logotipo">
         <nav>
-            <div>
-                <img src="img/logo_estrella.png">
-            </div>
-            <div>
-                <a href="#">Sobre mí</a>
-                <a href="#">Experiencia</a>
-                <a href="#">Contacto</a>
-            </div>
+            <a href="#hero">Sobre mí</a>
+            <a href="#experiencia">Experiencia</a>
+            <a href="#contacto">Contacto</a>
         </nav>
     </header>
 
     <main>
-        <section class="perfil">
+        <section id="hero">
             <h1>Alejandra Agüero</h1>
             <h2>Estudiante de Lic. Diseño y Comunicación Visual</h2>
-            <img src="img/fotoperfil.png" alt="Foto perfil CV" width="200" height="200" />
             <p> Me considero una persona creativa, muy apasionada por el diseño y el arte; con muchas ganas de crecer
                 profesionalmente. Actualmente trabajo en una agencia de Marketing Digital y también de manera freelance
-                autonoma en mi emprendimiento Ael Design, donde desarrollo Branding y Social Media.</p>
+                en mi emprendimiento Ael Design, donde desarrollo Branding y Social Media.</p>
+            <img src="img/fotoperfil.png" alt="Foto perfil CV" />
         </section>
 
-        <section class="experiencia">
-            <h3>Experiencia laboral</h3>
+        <article id="experiencia">
+            <div>
+                <img src="img/sol_icono.png" alt="" width="50" height="50" />
+                <h1>Experiencia laboral</h1>
+            </div>
             <ul>
-                <li>Fica Team</li><img src="img/fica_logotipo.jpg" alt="" width="50" height="50" />
-                <li>Fumo Bravo</li><img src="img/fumobravo_logotipo.jpg" alt="" width="50" height="50" />
-                <li>Ael Design</li><img src="img/aeldesing_logotipo.jpg" alt="" width="50" height="50" />
-            </ul>
-        </section>
+                <li>
+                    <img src="img/fumobravo_logotipo.jpg" alt="" />
+                    <h2>Fumo Bravo</h2>
+                    <h3>Brand Manager & Content Creator</h3>
+                    <p>2024 - Actualidad Creación de piezas gráficas para redes sociales | Branding | Logotipos</p>
+                </li>
 
-        <section>
-            <h4>Perfil Profesional</h4>
-            <h5>Datos personales</h5>
-            <ul>
-                <li>25 años</li>
-                <li>Glew, Almirante Brown</li>
-                <li>aleinformacion@gmail.com</li>
-            </ul>
-        </section>
+                <li>
+                    <img src="img/fica_logotipo.jpg" alt="" />
+                    <h2>Fica Team</h2>
+                    <h3>Brand Manager & Content Creator</h3>
+                    <p>2022 - 2024 Creación de piezas gráficas para redes sociales | Branding | Logotipos</p>
+                </li>
 
-        <section>
-            <h5>Formación Académica</h5>
-            <ul>
-                <li>Lic. en Diseño y Comunicación Visual Universidad Nacional de Lanús 2021 - Act. | 4° Año</li>
-                <li>Técnico en Programación E.E.S.T N°2 Ceferino Namuncurá 2013 - 2019</li>
+                <li>
+                    <img src="img/aeldesing_logotipo.jpg" alt="" />
+                    <h2>Ael Design</h2>
+                    <h3>Diseñadora Gráfica Freelance</h3>
+                    <p>2019 - 2025 Logotipos | Papelería y Cartelería | Branding | RRSS | Brochure</p>
+                </li>
             </ul>
-        </section>
+        </article>
+
+        <article class="formacion">
+            <div>
+                <img src="img/sol_icono.png" alt="" width="50" height="50" />
+                <h1>Formacion Academica</h1>
+            </div>
+
+            <ul>
+                <li>
+                    <img src="img/unla_logotipo" alt="" width="50" height="50" />
+                    <h2>Lic. en Diseño y Comunicacion Visual</h2>
+                    <p>Universidad Nacional de Lanús 2021 - Act. | 4° Año</p>
+                </li>
+
+                <li>
+                    <img src="img/tecnica_logotipo.jpg" alt="" width="50" height="50" />
+                    <h2>Tecnico en Programacion</h2>
+                    <p>E.E.S.T N°2 Ceferino Namuncurá 2013 - 2019</p>
+                </li>
+            </ul>
+        </article>
 
     </main>
 
-    <footer>
-        <p>Cátedra Wischñevsky</p>
+    <footer id="contacto">
         <ul>
             <li>
-                <a href="https://www.instagram.com/aeldesign_/">Instagram</a>
+                <img src="img/instagram_icon.webp" alt="Icono Instagram" />
+                <a href="https://www.instagram.com/aeldesign_/">@aeldesign_</a>
+            </li>
+            <li>
+                <img src="img/behance_icon.png" alt="Icono correo" />
+                <a href="https://www.behance.net/alejandraaguero16">Alejandra Agüero</a>
+            </li>
+            <li>
+                <img src="img/ubicacion_icon.webp" alt="Icono ubicacion" />
+                <a href="#">Glew, Buenos Aires</a>
             </li>
         </ul>
-
+        <p>Cátedra Wischñevsky 2026 | Derechos reservados</p>
     </footer>
+
 </body>
 
 </html>
