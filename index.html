@@ -11,13 +11,14 @@
     </style>
 </head>
 <!--  -->
+
 <body>
 
     <header>
-        <img src="img/logo_estrella.ico" alt="logotipo">
+        <img src="img/logo_estrella.ico" alt="logotipo" width="40px" height="40px">
         <nav>
             <a href="#hero">Sobre mí</a>
-            <a href="#experiencia">Experiencia</a>
+            <a href="#proyectos">Proyectos</a>
             <a href="#contacto">Contacto</a>
         </nav>
     </header>
@@ -29,33 +30,33 @@
             <p> Me considero una persona creativa, muy apasionada por el diseño y el arte; con muchas ganas de crecer
                 profesionalmente. Actualmente trabajo en una agencia de Marketing Digital y también de manera freelance
                 en mi emprendimiento Ael Design, donde desarrollo Branding y Social Media.</p>
-            <img src="img/fotoperfil.png" alt="Foto perfil CV" />
+            <img src="img/fotoperfil.png" alt="Foto perfil CV" width="400px" height="600px" />
         </section>
 
         <article id="experiencia">
             <div>
-                <img src="img/sol_icono.png" alt="" width="50" height="50" />
-                <h1>Experiencia laboral</h1>  <!-- tener más de un h1 es un error conceptual, sólo puede haber un h1 en todo el sitio porque es el elemento que utilizan los buscadores para encontrarte, lo correcto en este caso es tu nombre porque es el nombre de la página -->
+                <img src="img/sol_icono.png" alt="" width="50px" height="50px" />
+                <h2>Experiencia laboral</h2>
             </div>
             <ul>
                 <li>
-                    <img src="img/fumobravo_logotipo.jpg" alt="" />
-                    <h2>Fumo Bravo</h2>
-                    <h3>Brand Manager & Content Creator</h3>
+                    <img src="img/fumobravo_logotipo.jpg" alt="" width="150px" height="150px" />
+                    <h3>Fumo Bravo</h3>
+                    <h4>Brand Manager & Content Creator</h4>
                     <p>2024 - Actualidad Creación de piezas gráficas para redes sociales | Branding | Logotipos</p>
                 </li>
 
                 <li>
-                    <img src="img/fica_logotipo.jpg" alt="" />
-                    <h2>Fica Team</h2>
-                    <h3>Brand Manager & Content Creator</h3>
+                    <img src="img/fica_logotipo.jpg" alt="" width="150px" height="150px" />
+                    <h3>Fica Team</h3>
+                    <h4>Brand Manager & Content Creator</h4>
                     <p>2022 - 2024 Creación de piezas gráficas para redes sociales | Branding | Logotipos</p>
                 </li>
 
                 <li>
-                    <img src="img/aeldesing_logotipo.jpg" alt="" />
-                    <h2>Ael Design</h2>
-                    <h3>Diseñadora Gráfica Freelance</h3>
+                    <img src="img/aeldesing_logotipo.jpg" alt="" width="150px" height="150px" />
+                    <h3>Ael Design</h3>
+                    <h4>Diseñadora Gráfica Freelance</h4>
                     <p>2019 - 2025 Logotipos | Papelería y Cartelería | Branding | RRSS | Brochure</p>
                 </li>
             </ul>
@@ -63,40 +64,71 @@
 
         <article class="formacion">
             <div>
-                <img src="img/sol_icono.png" alt="" width="50" height="50" />
-                <h1>Formacion Academica</h1> <!-- aunque las etiquetas no pueden usar caracteres especiales el contenido sí, el texto puede tener sus tildes sin problema -->
+                <img src="img/sol_icono.png" alt="" width="50px" height="50px" />
+                <h2>Formación Académica</h2>
             </div>
 
             <ul>
                 <li>
-                    <img src="img/unla_logotipo" alt="" width="50" height="50" />
-                    <h2>Lic. en Diseño y Comunicacion Visual</h2>
+                    <img src="img/unla_logotipo" alt="" width="150px" height="150px" />
+                    <h3>Lic. en Diseño y Comunicación Visual</h3>
                     <p>Universidad Nacional de Lanús 2021 - Act. | 4° Año</p>
                 </li>
 
                 <li>
-                    <img src="img/tecnica_logotipo.jpg" alt="" width="50" height="50" />
-                    <h2>Tecnico en Programacion</h2>
+                    <img src="img/tecnica_logotipo.jpg" alt="" width="150px" height="150px" />
+                    <h3>Técnico en Programación</h3>
                     <p>E.E.S.T N°2 Ceferino Namuncurá 2013 - 2019</p>
                 </li>
             </ul>
+
         </article>
 
+        <section id="proyectos">
+            <h2>Proyectos destacados </h2>
+
+            <div class="efecto1">
+                <img src="img/corazon_icono.png" alt="" width="35px" height="30px" />
+                <div class="info">
+                    <h3>Piña Colada</h3>
+                    <p>Sistema de identidad</p>
+                    <p>Introducción al lettering</p>
+                </div>
+            </div>
+
+            <div class="efecto2">
+                <img src="img/corazon_icono.png" alt="" width="35px" height="30px" />
+                <div class="info">
+                    <h3>Pequeñas Travesuras</h3>
+                    <p>Sistema de identidad</p>
+                    <p>Ilustración de personajes</p>
+                </div>
+
+        </section>
     </main>
+
+    <article class="volver">
+        <img src="img/flecha_icono.png" alt="" width="25px" height="25px" />
+        <a href="#hero">volver arriba</a>
+        <img src="img/flecha_icono.png" alt="" width="25px" height="25px" />
+    </article>
+
+
+
 
     <footer id="contacto">
         <ul>
             <li>
-                <img src="img/instagram_icon.webp" alt="Icono Instagram" />
-                <a href="https://www.instagram.com/aeldesign_/">@aeldesign_</a> <!-- cuando utilices links externos te conviene agregar el atributo target="_blank" para que se abran en pestañas distintas y la persona no se pierda de tu página -->
+                <img src="img/instagram_icon.webp" alt="Icono Instagram" width="20px" height="20px" />
+                <a href="https://www.instagram.com/aeldesign_/" target="_blank">@aeldesign_</a>
             </li>
             <li>
-                <img src="img/behance_icon.png" alt="Icono correo" />
-                <a href="https://www.behance.net/alejandraaguero16">Alejandra Agüero</a>
+                <img src="img/behance_icon.png" alt="Icono correo" width="20px" height="20px" />
+                <a href="https://www.behance.net/alejandraaguero16/" target="_blank">Alejandra Agüero</a>
             </li>
             <li>
-                <img src="img/ubicacion_icon.webp" alt="Icono ubicacion" />
-                <a href="#">Glew, Buenos Aires</a>
+                <img src="img/ubicacion_icon.webp" alt="Icono ubicacion" width="20px" height="20px" />
+                <a href=" #">Glew, Buenos Aires</a>
             </li>
         </ul>
         <p>Cátedra Wischñevsky 2026 | Derechos reservados</p>

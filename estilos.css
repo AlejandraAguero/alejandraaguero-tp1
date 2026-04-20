@@ -4,14 +4,14 @@
 .darker-grotesque {
     font-family: "Darker Grotesque", sans-serif;
     font-optical-sizing: auto;
-    font-weight: <weight>; /* los brackets son elementos de html, no de css, lo que están indicando acá es que tenés que determinarle un peso numérico a esta tipografía que linkeaste */
+    font-weight: 400, 500;
     font-style: normal;
 }
 
 .asta-sans {
     font-family: "Asta Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: <weight>; /* idem */
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -28,7 +28,6 @@ body {
     font-weight: 400;
     text-align: left;
     background-color: rgb(245, 245, 245);
-    color: #3A3A3A; /* no repitas! esta propiedad ya la declaraste en el selector universal */
 }
 
 header {
@@ -39,26 +38,21 @@ header {
 }
 
 header img {
-    width: 50px; /* el tamaño de las imágenes va siempre desde el html, después pasalo acá */
-    height: 50px;
     padding: 30px;
 }
 
 nav {
     padding: 30px;
-    font-size: 2.5rem; /* a nivel diseño, este tamaño tipográfico es muy grande para un header, se siente con un tamaño muy invasivo */
+    font-size: 1.5rem;
     text-align: right;
-    text-decoration: none; /* no repitas! esto ya está en el selector universal */
-    color: #3A3A3A; /* no repitas!! */
-    width: 100vh; /* utilizar anchos con vh es un error conceptual porque vh es una unidad para establecer alturas y no anchos, si lo que buscás es darles un ancho a los botones podés usar px, pero si querés poner espacio entre los botones lo mejor va a ser utilizar gap */
     display: flex;
     justify-content: space-evenly;
+    gap: 55px;
 }
 
 #hero {
-    font-size: 1.2rem; /* no es conveniente que una sección completa que tiene muchos tamaños tipográficos tenga declarado el tamaño desde la etiqueta padre porque te condiciona al resto de los elementos, lo mejor es poner en cada elemento específico */
     height: 90vh;
-    background-image: url(img/textura_fondo.png); /* esta imagen es muy grande y agrega peso extra al tamaño de la página, te va a convenir reducirlo un poco para lo máximo que vayas a utilizar, casi siempre es de 1920px de ancho */
+    background-image: url(img/textura_fondo.png);
     background-position: center;
     background-size: cover;
     display: flex;
@@ -79,26 +73,25 @@ nav {
 }
 
 #hero h2 {
+    font-size: 1.5rem;
     padding: 10px;
     margin-top: 50px;
     text-align: center;
-    width: 35%; /* no es conveniente poner los anchos con porcentajes tan pequeño, si lo que buscás es establecer un límite utilizá max-width. además te aconsejo que le pongas text-wrap balance porque en pantallas un poco más chicas se genera una huerfana */
-    font-family: "Asta Sans", sans-serif; /* no repitas! */
+    text-wrap: balance;
+    max-width: 35%;
     font-weight: 400;
-    color: white;
+    color: whitesmoke;
     background-color: #C6ADDB;
 }
 
 #hero p {
     font-size: 1.5rem;
     max-width: 600px;
-    margin-top: 4%; /* tampoco son aconsejables los márgenes con porcentajes, mejor los px*/
+    margin-top: 50px;
     text-wrap-style: balance;
 }
 
 #hero img {
-    width: 400px; /* medidas desde el html!! */
-    height: 600px;
     border-radius: 200px;
 }
 
@@ -106,8 +99,7 @@ nav {
     background-color: rgb(255, 255, 255);
 }
 
-#experiencia div {
-    background-color: #C6ADDB;
+div {
     border-bottom-left-radius: 45px;
     border-bottom-right-radius: 45px;
     display: flex;
@@ -117,81 +109,154 @@ nav {
     padding-left: 50px;
 }
 
-#experiencia h1 {
+#experiencia div {
+    background-color: #C6ADDB;
+}
+
+#experiencia h2 {
     font-family: "Darker Grotesque", sans-serif;
     font-weight: 500;
-    font-size: 50px;
+    font-size: 3rem;
     padding: 20px;
     color: whitesmoke;
 }
 
-#experiencia li img {
-    padding-left: 0px; /* no repitas! */
-    width: 150px;
-    height: 150px; /* las medidas al html */
-}
-
-#experiencia ul {
-    padding-top: 80px; /* tratá de unificar los paddings y que te quede todo declarado en una sola línea */
-    padding-bottom: 80px;
+article ul {
+    padding: 60px 0 90px 0;
     display: flex;
     justify-content: space-evenly;
 }
 
-#experiencia li {
+article li {
     padding-top: 40px;
     width: 20%;
 }
 
-.formacion div { /* si ambos divs van a ser iguales con la única diferencia del color de fondo es preferible que estén las mismas propiedades desde un solo selector y sólo a las cosas particulares, como el bg, ponerlas en selectores distintos */
+.formacion div {
     background-color: #767676;
-    border-bottom-left-radius: 45px;
-    border-bottom-right-radius: 45px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-    padding-left: 50px;
 }
 
-.formacion h1 {
+.formacion h2 {
     font-family: "Darker Grotesque", sans-serif;
     font-weight: 500;
-    font-size: 50px;
+    font-size: 3rem;
     padding: 20px;
     color: whitesmoke;
 }
 
-.formacion li img {
-    padding-left: 0px;
-    width: 150px; /* las medidas al html */
-    height: 150px;
+#proyectos {
+    height: 100vh;
+    background-image: url(img/textura_fondo_lila.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 0 80px 0;
 }
 
-.formacion ul { /* misma corrección que para ".formacion div" */
-    padding-top: 80px;
-    padding-bottom: 80px;
+#proyectos h2 {
+    width: 900px;
+    font-family: "Darker Grotesque", sans-serif;
+    font-weight: 500;
+    font-size: 6rem;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.efecto1 {
+    height: 40vh;
+    width: 900px;
+    background-size: cover;
+    background-position: center;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    background-image: url(img/pinacolada_fondo.jpg);
+}
+
+.efecto2 {
+    height: 40vh;
+    width: 900px;
+    background-size: cover;
+    background-position: center;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    background-image: url(img/travesuras_fondo.jpg);
+}
+
+.info {
+    opacity: 0;
+    transition: opacity 0.3s ease;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.efecto1:hover {
+    background-color: whitesmoke;
+    transition: opacity 0.3s ease-out;
+    background-image: none;
+}
+
+.efecto2:hover {
+    background-color: whitesmoke;
+    transition: opacity 0.3s ease-out;
+    background-image: none;
+}
+
+.efecto1:hover .info {
+    opacity: 1;
+}
+
+.efecto2:hover .info {
+    opacity: 1;
+}
+
+.efecto1 .efecto2 h2 {
+    text-align: left;
+    max-width: 35%;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.volver {
+    background-color: whitesmoke;
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
 }
 
 footer {
     background-color: #E9E9E9;
     text-align: center;
-    padding: 40px;
     font-size: 1rem;
 }
 
-footer ul {
+#contacto ul {
+    padding: 30px;
     display: flex;
     flex-direction: row;
-    align-content: center; /* esta propiedad no funciona porque necesita de flex-wrap */
+    align-content: center;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    padding-bottom: 30px;
-} /* además de la ul vas a ver que te conviene también ponerle flex a los li así podés centrar los íconos con el texto y que quede más prolijo */
+}
 
-footer img {
-    width: 20px;
-    height: 20px; /* las medidas van el el html! */
+#contacto li {
+    display: flex;
+    align-content: center;
+    gap: 5px;
+}
+
+#contacto p {
+    padding-bottom: 20px;
 }
